@@ -21,7 +21,7 @@ functions:
   # POST API to add an image to the bucket
   s3FileUploader:
     handler: src/upload.handler
-    name: s3-file-uploader
+    name: s3-file-uploader1
     description: A lambda handler that uploads a file to an S3 bucket based on an API Gateway trigger.
     events:
       - http:
@@ -36,7 +36,7 @@ functions:
   # GET API to retrieve an image from the bucket
   s3FileGet:
     handler: src/get.handler
-    name: s3-file-get
+    name: s3-file-get1
     description: A lambda handler that retrieves a file from an S3 bucket based on an API Gateway trigger.
     events:
       - http:
@@ -51,7 +51,7 @@ functions:
   # DELETE API to delete an image from the bucket
   s3FileDelete:
     handler: src/delete.handler
-    name: s3-file-delete
+    name: s3-file-delete1
     description: A lambda handler that deletes a file from an S3 bucket based on an API Gateway trigger.
     events:
       - http:
